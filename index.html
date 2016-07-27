@@ -1,0 +1,40 @@
+<!-- AngularJS module title -->
+<html ng-app="EmailApp">
+	<head>
+		<title>BAZINGA MAIL</title>
+
+		<!-- Add styles for look and useability -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+		<!-- Import libraries -->
+		<script src="lib/jquery-2.1.4.js"></script>
+		<script src="lib/angular.js"></script>
+		<script src="lib/angular-route.js"></script>
+		<script src="lib/angular-sanitize.js"></script>
+	</head>
+	<body>
+		<header class="header" role="banner">
+			<div class="headertitle">
+				<p>BAZINGA</p>
+			</div>
+		</header>
+
+		<!-- Create single app view for HTML insertion -->
+		<div ng-view class="flex"></div>
+
+		<script src="js/app.js"></script>
+
+		<!-- link controllers to module !-->
+		<script src="js/controllers/InboxCtrl.js"></script>
+		<script src="js/controllers/EmailCtrl.js"></script>
+
+		<!-- link factories to module !-->
+		<script src="js/factories/InboxFactory.js"></script>
+		<script src="js/factories/EmailFactory.js"></script>
+
+		<!-- link directives to module !-->
+		<script src="js/directives/InboxDrctv.js"></script>
+		<script src="js/directives/EmailDrctv.js"></script>
+	</body>
+</html>

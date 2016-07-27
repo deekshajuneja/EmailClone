@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div class="module_body">
+	<h1> Write Your Email Here </h1>
+		<form>
+			<input type="text" placeholder="To" style="width:95%;"><br />
+			<input type="text" placeholder="Subject" style="width:95%;"><br />
+			<textarea style="width:95%;" rows="10"></textarea>
+		</form>
+	</div>
+	<div class="module_footer">
+		<h1>
+			<input type="button" value="Send" onclick="sendfunction()">
+			<input type="button" value="Close" onclick="self.close()">
+		<h1>
+		<script>
+			function sendfunction(){
+			//Sending the email would require a backend and we dont actually do that
+				alert("Message sent!");
+				window.close();
+			}
+		</script>
+	</div>
+</body>
+</html>
